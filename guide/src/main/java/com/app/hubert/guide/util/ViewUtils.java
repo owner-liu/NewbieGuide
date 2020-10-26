@@ -65,8 +65,8 @@ public class ViewUtils {
                 tmp = (View) tmp.getParent();
             }
         }
-        result.right = result.left + child.getHeight();
-        result.bottom = result.top + child.getHeight();
+        result.right = result.left + child.getMeasuredWidth();
+        result.bottom = result.top + child.getMeasuredHeight();
         return result;
     }
 }
